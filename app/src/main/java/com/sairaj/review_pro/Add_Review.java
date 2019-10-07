@@ -53,7 +53,6 @@ public class Add_Review extends AppCompatActivity implements LocationListener {
     DatabaseReference myRef;
     FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
     String user_id, location;
-    String city;
 
     double longitude, latitude;
     LocationManager locationManager = null;
@@ -138,7 +137,7 @@ public class Add_Review extends AppCompatActivity implements LocationListener {
                     map.put("Review", review_text);
                     map.put("user_name", userName);
                     map.put("Image", image_uri);
-                    map.put("Location",city);
+//                    map.put("Location",location);
 
 
                     FirebaseDatabase.getInstance().getReference("Review").child(Product_id).push().setValue(map).addOnSuccessListener(new OnSuccessListener<Void>() {
@@ -190,8 +189,8 @@ public class Add_Review extends AppCompatActivity implements LocationListener {
         try {
             addresses = geocoder.getFromLocation(latitude, longitude, 1);
 
-            String addres = addresses.get(0).getAddressLine(0);
-            city = addresses.get(0).getLocality();
+            String addres=addresses.get(0).getAddressLine(0);
+            String city=addresses.get(0).getLocality();
             Log.e("Location Name", city);
 
         } catch (IOException e) {
