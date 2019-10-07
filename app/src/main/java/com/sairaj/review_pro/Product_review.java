@@ -111,7 +111,8 @@ public class Product_review extends AppCompatActivity {
                                         snapshot.child("Image").getValue().toString(),
                                         snapshot.child("Rating").getValue().toString(),
                                         snapshot.child("Review").getValue().toString(),
-                                        snapshot.child("user_name").getValue().toString()
+                                        snapshot.child("user_name").getValue().toString(),
+                                        snapshot.child("Location").getValue().toString()
 
 
                                 );
@@ -137,6 +138,7 @@ public class Product_review extends AppCompatActivity {
                 holder.user.setText(review.getUser_name());
                 holder.review.setText(review.getReview());
                 Glide.with(Product_review.this).load(review.getImage()).into(holder.userImage);
+                holder.location.setText(review.getLocation());
 
             }
         };
