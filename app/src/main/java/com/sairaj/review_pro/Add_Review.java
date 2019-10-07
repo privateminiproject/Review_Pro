@@ -53,7 +53,7 @@ public class Add_Review extends AppCompatActivity implements LocationListener {
     DatabaseReference myRef;
     FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
     String user_id, location;
-
+String city;
     double longitude, latitude;
     LocationManager locationManager = null;
 
@@ -190,7 +190,7 @@ public class Add_Review extends AppCompatActivity implements LocationListener {
             addresses = geocoder.getFromLocation(latitude, longitude, 1);
 
             String addres=addresses.get(0).getAddressLine(0);
-            String city=addresses.get(0).getLocality();
+         city=addresses.get(0).getLocality();
             Log.e("Location Name", city);
 
         } catch (IOException e) {
