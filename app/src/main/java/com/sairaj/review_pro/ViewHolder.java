@@ -49,9 +49,9 @@ public class ViewHolder extends RecyclerView.ViewHolder {
       product_name.setText(string);
     }
 
-    public void setUserName(String string) {
-        userName.setText(string);
-    }
+//    public void setUserName(String string) {
+//        userName.setText(string);
+//    }
 
 
 }

@@ -140,7 +140,7 @@ public class MainActivity extends AppCompatActivity {
             protected void onBindViewHolder(final ViewHolder holder, final int position, final Model model) {
                 holder.setProduct_name(model.getProducts_Name());
                 holder.setDesc(model.getProducts_Description());
-                holder.setUserName(model.getEmail_id());
+//                holder.setUserName(model.getEmail_id());
                 Log.e("name",model.getProducts_Name());
                 Glide.with(MainActivity.this).load(model.getProducts_Image()).into(holder.img);
                 holder.root.setOnClickListener(new View.OnClickListener() {

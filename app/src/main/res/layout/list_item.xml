@@ -52,7 +52,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="Mumbai" />
+                android:text="" />
 
         </LinearLayout>
 
@@ -90,7 +90,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/nunito_semibold"
-                        android:text="jadhavrupesh22@gmail.com"
+                        android:text=""
                         android:layout_marginStart="10dp"
 
                         android:textColor="#000"

@@ -137,7 +137,7 @@ String city;
                     map.put("Review", review_text);
                     map.put("user_name", userName);
                     map.put("Image", image_uri);
-//                    map.put("Location",location);
+                    map.put("Location",city);
 
 
                     FirebaseDatabase.getInstance().getReference("Review").child(Product_id).push().setValue(map).addOnSuccessListener(new OnSuccessListener<Void>() {
