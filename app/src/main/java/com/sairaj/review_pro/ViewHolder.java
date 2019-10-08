@@ -27,7 +27,7 @@ public class ViewHolder extends RecyclerView.ViewHolder {
         desc = itemView.findViewById(R.id.list_desc);
         img=itemView.findViewById(R.id.imageView);
         location=itemView.findViewById(R.id.location);
-        userName=itemView.findViewById(R.id.userNames);
+//        userName=itemView.findViewById(R.id.userNames);
 
     }
 
