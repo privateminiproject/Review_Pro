@@ -139,6 +139,7 @@ public class Product_review extends AppCompatActivity {
                 holder.review.setText(review.getReview());
                 Glide.with(Product_review.this).load(review.getImage()).into(holder.userImage);
                 holder.location.setText(review.getLocation());
+                holder.setRatingBar(review.getRating());
 
             }
         };

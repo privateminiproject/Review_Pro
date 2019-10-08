@@ -36,9 +36,9 @@ public class ReviewHolder extends RecyclerView.ViewHolder {
         location.setText(string);
     }
 
-//    public void setRatingBar(int star) {
-//        ratingBar.setRating(star);
-//    }
+    public void setRatingBar(String string) {
+        ratingBar.setRating(Float.parseFloat(string));
+    }
 
     public void setReview(String string) {
         review.setText(string);

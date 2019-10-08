@@ -155,7 +155,6 @@ public class MainActivity extends AppCompatActivity {
 //                        intent.putExtra("userName",UserName);
                         intent.putExtra("Product_id",Product_id);
 //                        intent.putExtra("Product_id",model.getEmail_id());
-
                         startActivity(intent);
 
                     }
